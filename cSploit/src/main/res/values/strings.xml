@@ -15,8 +15,7 @@
     <string name="services">Services</string>
     <string name="os">OS</string>
     <string name="device_type">Device Type</string>
-    <string name="start_hijack">Tap on a session to start hijacking, long tap to save it to file.
-    </string>
+    <string name="start_hijack">Tap on a session to start hijacking, long tap to save it to file.</string>
     <string name="sort">Sort:</string>
     <string name="select_module">Select a module to run</string>
     <string name="choose">Choose</string>
@@ -245,6 +244,10 @@
     <string name="rpcd_running">Metasploit RPCD is already running</string>
     <string name="rpcd_timedout">Metasploit RPCD does not respond</string>
 
+    <string name="error_rcpd_fatal">发生致命错误，正在准备发送错误报告给我的开发者。
+如果应用程序没有自己关闭，请通过选项->应用关闭，
+并通知我的开发者。
+</string>
     <!-- mitm modules -->
     <string name="mitm_simple_sniff">Simple sniff</string>
     <string name="mitm_simple_sniff_desc">Redirect target\'s traffic through this device and show some stats while dumping it to a pcap file.</string>

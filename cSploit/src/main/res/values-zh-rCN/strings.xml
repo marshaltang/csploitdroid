@@ -6,6 +6,7 @@
     <string name="enter_redirection_details">在下方键入跳转详情:</string>
     <string name="address">地址</string>
     <string name="port">端口</string>
+    <string name="ports">端口s</string>
     <string name="target">目标</string>
     <string name="unknown">未知</string>
     <string name="services">服务</string>
@@ -223,6 +224,7 @@ If not, see http://www.gnu.org/licenses/.
     <string name="mitm_simple_sniff_desc">重定向目标的网络数据使其经过此设备，并在将数据转储到pcap文件的同时显示统计信息。</string>
     <string name="mitm_password_sniff">密码窃取工具</string>
     <string name="mitm_password_sniff_desc">自目标处窃取许多协议的密码比如 http, ftp, imap, imaps, irc, msn等等。</string>
+    <string name="mitm_password_sniff_menu_fields">Users/pass fields</string>
     <string name="mitm_session_hijack">会话劫持</string>
     <string name="mitm_session_hijack_desc">监听在网络上的cookie并劫持会话。</string>
     <string name="mitm_connection_kill">终结连接</string>
@@ -276,6 +278,9 @@ If not, see http://www.gnu.org/licenses/.
     <string name="menu_stop_monitor">停止网络监控工具</string>
     <string name="menu_submit_issue">提交问题或建议（英文）</string>
     <string name="menu_about">关于</string>
+
+    <string name="iface_dialog_title">Choose a network interface</string>
+    <string name="iface_error_no_available">There\'re no network interfaces available</string>
 
     <string name="scanner_select_ports">选择自定义端口</string>
      <string name="scanner_custom_parameters">自定义参数</string>
@@ -353,6 +358,7 @@ If not, see http://www.gnu.org/licenses/.
 
     <string name="menu_add">添加</string>
     <string name="menu_scan">扫描</string>
+    <string name="menu_ifaces">Net interfaces</string>
     <string name="menu_wifi_scan">WiFi 扫描</string>
     <string name="menu_stop_msfrpcd">停止Metasploit远程过程调用守护程序</string>
 
@@ -369,6 +375,8 @@ If not, see http://www.gnu.org/licenses/.
     <string name="run">运行</string>
     <string name="command">命令</string>
     <string name="clear">清空</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
     <string name="msfrpc_disconnected">MSF RPC 连接断开</string>
     <string name="no_opened_sessions">该目标没有活动的会话。</string>
     <string name="delete">删除</string>
@@ -405,6 +413,37 @@ If not, see http://www.gnu.org/licenses/.
     <string name="new_core_found">核心版本 %s 可用，您希望更新吗？</string>
     <string name="update_cancelled">更新已取消</string>
     <string name="child_not_started">无法启动进程</string>
+    <string name="msfrpcd_killed">MSF RPC daemon killed</string>
+    <string name="msfrcd_start_failed">MSF RPC daemon failed to start</string>
+    <string name="msf_connection_failed">Connection to the MSF RPC daemon FAILED!</string>
+    <string name="net_discovery_start_failed">Network discovery FAILED to start!</string>
+    <string name="new_apk_found">App version %s is available, do you want to upgrade ?</string>
+    <string name="new_ruby_found">A new version of Ruby is available, do you want to upgrade ?</string>
+    <string name="new_msf_found">A new MSF version is available, do you want to upgrade ?</string>
+    <string name="msf_status">Metasploit Status</string>
+    <string name="msf_exploit_ranking">Ranking: %s</string>
+    <string name="msf_rank_manual">Manual</string>
+    <string name="msf_rank_low">Low</string>
+    <string name="msf_rank_average">Average</string>
+    <string name="msf_rank_normal">Normal</string>
+    <string name="msf_rank_good">Good</string>
+    <string name="msf_rank_great">Great</string>
+    <string name="msf_rank_excellent">Excellent</string>
+    <string name="mitm_ss_select_target_title">Select target</string>
+    <string name="mitm_ss_select_target_prompt">Select %s ?</string>
+    <string name="github_issues_url" translatable="false">https://github.com/cSploit/android/issues</string>
+    <string name="issue_message"><![CDATA[<p>Before opening a new issue, please, take the time to read the already <a href="%1$s">open issues</a>, probably it\' s already open. If it\' s not open we\'ll need as much information as you can get, so please, read <a href="%2$s">this guide</a> in order to know how to report a bug properly.</p>]]></string>
+    <string name="connection_lost">connection lost</string>
+    <string name="connection_lost_prompt">delete current session and start another?</string>
+    <string name="any_interface">any interface</string>
+    <string name="error_initializing_interface">Error initializing %s</string>
+
+    <string name="cSploitChannelDescription" >cSploit-related messages</string>
+
+    <!-- permissions -->
+    <string name="permissions_fail">Sorry, you need to approve all permission requests.</string>
+    <string name="permissions_succeed">Thanks!</string>
+
     <string name="pref_updates">更新</string>
     <string name="pref_updates_app">软件</string>
     <string name="pref_updates_app_desc">检查软件更新</string>
