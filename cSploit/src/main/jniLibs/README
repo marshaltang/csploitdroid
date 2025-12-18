@@ -1,7 +1,17 @@
+在 ./cSploit/jni下面执行
+
+./build.sh
+
+编译成功后生成2个so文件至：
 Add prebuilt jni libraries here:
 
-./armeabi-v7a/libcSploitClient.so
-./armeabi-v7a/libcSploitCommon.so
-./armeabi/libcSploitClient.so
-./armeabi/libcSploitCommon.so
-etc.
+目前还不支持
+./cSploit/src/main/jniLibs/arm64-v8a/libcSploitClient.so
+./cSploit/src/main/jniLibs/arm64-v8a/libcSploitCommon.so
+主要用这个
+./cSploit/src/main/jniLibs/armeabi-v7a/libcSploitClient.so
+./cSploit/src/main/jniLibs/armeabi-v7a/libcSploitCommon.so
+已经过时了
+./cSploit/src/main/jniLibs/armeabi/libcSploitClient.so
+./cSploit/src/main/jniLibs/armeabi/libcSploitCommon.so
+
