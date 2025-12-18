@@ -1,19 +1,19 @@
-buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0-alpha12'
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
+//buildscript {
+//    repositories {
+//        google()
+//        jcenter()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:3.3.0-alpha12'
+//    }
+//}
+//
+//allprojects {
+//    repositories {
+//        google()
+//        jcenter()
+//    }
+//}
 apply plugin:  'com.android.application'
 
 dependencies {
@@ -35,8 +35,8 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -49,10 +49,10 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 28
-        versionCode 4
-        versionName "1.7.0-unstable"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 172
+        versionName "1.7.2-unstable"
         if(System.getenv("NIGHTLY_BUILD")) {
             versionName += "+" + System.getenv("NIGHTLY_BUILD_COMMIT").substring(0, 7)
         }
@@ -66,14 +66,22 @@ android {
     }
 
     signingConfigs {
+//        release {
+//            if (System.getenv("KEYSTORE_FILE") != null) {
+//                storeFile = file(System.getenv("KEYSTORE_FILE"))
+//                storePassword = System.getenv("KEYSTORE_PWD")
+//                keyAlias = System.getenv("KEYSTORE_ALIAS")
+//                keyPassword = System.getenv("KEYSTORE_ALIAS_PWD")
+//            }
+//            return true
+//        }
         release {
-            if (System.getenv("KEYSTORE_FILE") != null) {
-                storeFile = file(System.getenv("KEYSTORE_FILE"))
-                storePassword = System.getenv("KEYSTORE_PWD")
-                keyAlias = System.getenv("KEYSTORE_ALIAS")
-                keyPassword = System.getenv("KEYSTORE_ALIAS_PWD")
-            }
-            return true
+            keyAlias 'key0'
+            keyPassword '780623tanG'
+            //linux build key
+//            storeFile file('/home/tangmeng/.jenkins/workspace/tsaas/cSploit/key/ikey.jks')
+            storeFile file('\\key\\ikey.jks')
+            storePassword '780623tanG'
         }
     }
 
@@ -91,11 +99,11 @@ android {
         release {
             buildConfigField "java.util.Date", "BUILD_TIME", "new java.util.Date(" + Calendar.getInstance().getTimeInMillis() + "L)"
             buildConfigField "String", "BUILD_NAME", "\"" + System.getenv("USER") + "\""
-            if (System.getenv("KEYSTORE_FILE") != null) {
+//            if (System.getenv("KEYSTORE_FILE") != null) {
                 signingConfig signingConfigs.release
-            }
+//            }
             multiDexEnabled true
-            return true
+//            return true
         }
     }
 }
